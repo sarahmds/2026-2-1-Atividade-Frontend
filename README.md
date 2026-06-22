@@ -12,10 +12,10 @@
 ## Checklist (passo a passo da tarefa)
 - [x] 1. Fork desse repositório
 - [x] 2. Colocar o nome nesse arquivo `README.md`, substituindo FIXME por seu nome na linha 10
-- [ ] 3. Criar um projeto next configurando para biome, typescript, tailwindcss
-- [ ] 4. Adicionar a lib [shadcnui](https://ui.shadcn.com/)
-- [ ] 5. Commit com mensagem "criado e configurado app inicial"
-- [ ] 6. Modificar a tela inicial com as seguintes informações
+- [x] 3. Criar um projeto next configurando para biome, typescript, tailwindcss
+- [x] 4. Adicionar a lib [shadcnui](https://ui.shadcn.com/)
+- [x] 5. Commit com mensagem "criado e configurado app inicial"
+- [x] 6. Modificar a tela inicial com as seguintes informações
   - [ ] Nome do aluno (`/src/app/page.tsx`)
   - [ ] Modificar o título e o ícone da aplicação (`/src/app/layout.tsx`)
   - [ ] Adicionar link para a página de login
