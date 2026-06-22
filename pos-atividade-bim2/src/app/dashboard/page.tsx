@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableTableRow } from "@/components/ui/table";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 interface Quote {
@@ -206,22 +206,22 @@ export default function DashboardPage() {
             <div className="rounded-md border border-zinc-200 dark:border-zinc-800">
               <Table>
                 <TableHeader>
-                  <TableTableRow>
+                  <TableRow>
                     <TableHead>Frase</TableHead>
                     <TableHead className="w-[180px]">Autor</TableHead>
                     <TableHead className="w-[140px] text-right">Ações</TableHead>
-                  </TableTableRow>
+                  </TableRow>
                 </TableHeader>
                 <TableBody>
                   {quotes.length === 0 ? (
-                    <TableTableRow>
+                    <TableRow>
                       <TableCell colSpan={3} className="h-24 text-center text-sm text-zinc-500">
                         Nenhuma frase disponível.
                       </TableCell>
-                    </TableTableRow>
+                    </TableRow>
                   ) : (
                     quotes.map((q) => (
-                      <TableTableRow key={q.id}>
+                      <TableRow key={q.id}>
                         <TableCell className="font-medium">"{q.quote}"</TableCell>
                         <TableCell className="text-zinc-500">{q.author}</TableCell>
                         <TableCell className="text-right space-x-2">
@@ -232,7 +232,7 @@ export default function DashboardPage() {
                             Apagar
                           </Button>
                         </TableCell>
-                      </TableTableRow>
+                      </TableRow>
                     ))
                   )}
                 </TableBody>
