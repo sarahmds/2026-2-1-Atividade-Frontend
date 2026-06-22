@@ -10,7 +10,7 @@
 - **Aluno**: FIXME
 - **Data de entrega**: por causa da festividade do aniversário de Amanda, dia 29/06/2026
 ## Checklist (passo a passo da tarefa)
-- [ ] 1. Fork desse repositório
+- [x] 1. Fork desse repositório
 - [ ] 2. Colocar o nome nesse arquivo `README.md`, substituindo FIXME por seu nome na linha 10
 - [ ] 3. Criar um projeto next configurando para biome, typescript, tailwindcss
 - [ ] 4. Adicionar a lib [shadcnui](https://ui.shadcn.com/)
