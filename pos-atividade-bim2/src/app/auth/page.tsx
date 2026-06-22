@@ -28,16 +28,16 @@ export default function AuthPage() {
     setLoading(true);
 
     try {
-      // Autenticação na API DummyJSON
-      const response = await fetch("https://dummyjson.com/auth/login", {
-        method: "堅OST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          username: username.trim(),
-          password: password.trim(),
-          expiresInMins: 60, // opcional
-        }),
-      });
+    // Autenticação na API DummyJSON
+    const response = await fetch("https://dummyjson.com/auth/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        username: username.trim(),
+        password: password.trim(),
+        expiresInMins: 60,
+      }),
+    });
 
       const data = await response.json();
 
